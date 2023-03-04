@@ -31,7 +31,7 @@ struct UITextField: View {
         .background(
             Rectangle()
                 .fill(Color.white)
-                .cornerRadius(12)
+                .cornerRadius(15)
                 .shadow(
                     color: Color.gray.opacity(0.7),
                     radius: 8,

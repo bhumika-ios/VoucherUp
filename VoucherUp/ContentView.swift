@@ -47,12 +47,37 @@ struct ContentView: View {
                             .keyboardType(.emailAddress)
                             .autocapitalization(.none)
                             .padding()
+                           
+                        UITextField(value: $password, placeholder: "password", isSecure: true, icon: "lock.fill")
+                            .autocapitalization(.none)
+                            .padding()
+                            .padding(.vertical,-30)
                     }
-                   
+                    .padding()
+                    .padding(.vertical,25)
+                    VStack(alignment: .leading, spacing: 20){
+                        Button(action: {}, label: {
+                            Text("LogIn")
+                                .frame(width: 330, height: 45)
+                            
+                                .background(
+                                    Rectangle()
+                                        .fill(Color("Primary"))
+                                        .cornerRadius(15)
+                                        .shadow(
+                                            color: Color.gray.opacity(0.7),
+                                            radius: 8,
+                                            x: 0,
+                                            y: 8
+                                        )
+                                    )
+                        })
+                    }
+                    .padding()
                     
                 }
             }
-            .padding(.top,30)
+            .padding(.top)
             .background(Color.white)
             .clipShape(Rounded())
             .padding(.top, -100)
