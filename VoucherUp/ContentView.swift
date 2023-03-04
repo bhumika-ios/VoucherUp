@@ -20,11 +20,29 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                 
             }
-            ScrollView(.vertical, showsIndicators: true){
-                VStack(alignment: .leading){
+            ZStack{
+                VStack(alignment: .center, spacing: 1.0){
+                    VStack(alignment: .center, spacing: 10){
+                        Text("Welcome Back.").bold()
+                            .font(.system(size: 26))
+                        
+                        Text("Log in to get started.")
+                            .foregroundColor(Color("Primary"))
+                            .multilineTextAlignment(.center)
+                           // .padding(.leading)
+                        Divider()
+                            .padding(.leading)
+                            .frame(width: 250, height: 1)
+                            .overlay(.black)
+                    }
+                   
                     
                 }
             }
+            .padding(.top,400)
+            .background(Color.white)
+            .clipShape(Rounded())
+            .padding(.top, -100)
         }
        
     }
