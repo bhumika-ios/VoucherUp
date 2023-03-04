@@ -27,17 +27,19 @@ struct ContentView: View {
                     VStack(alignment: .center, spacing: 10){
                         Text("Welcome Back.").bold()
                             .font(.system(size: 26))
+                            .foregroundColor(Color("Main2Color"))
                         
                         Text("Log in to get started.")
-                            .foregroundColor(Color("Primary"))
+                            .foregroundColor(Color("Main2Color"))
                            
                            // .padding(.leading)
                         Divider()
+                            
                             .padding(.leading)
                         // divider with short to with and height set
                             .frame(width: 250, height: 1)
                         // divider color set
-                            .overlay(.black)
+                            .overlay(Color("Main2Color"))
                             
                     }
                     .padding(.vertical)
@@ -59,7 +61,7 @@ struct ContentView: View {
                         Button(action: {}, label: {
                             Text("Log In").bold()
                                 .frame(width: 330, height: 45)
-                                .foregroundColor(.white)
+                                .foregroundColor(Color("MainColor"))
                                 .background(
                                     Rectangle()
                                         .fill(Color("Primary"))
@@ -77,22 +79,24 @@ struct ContentView: View {
                     VStack(spacing: 20){
                         HStack{
                             Text("Not a member?")
-                                .foregroundColor(.blue)
+                              
                             Button(action: {}, label: {
                                 Text("Sign up now")
                             })
                         }
+                        .foregroundColor(Color("LinkColor"))
                     }
                     .padding()
                     VStack(spacing: 20){
                         Button(action: {}, label: {
                             Text("Forgot your password?")
                         })
+                        .foregroundColor(Color("LinkColor"))
                     }
                 }
             }
             .padding()
-            .background(Color.white)
+            .background(Color("MainColor"))
             .clipShape(Rounded())
             .padding(.top, -100)
         }
