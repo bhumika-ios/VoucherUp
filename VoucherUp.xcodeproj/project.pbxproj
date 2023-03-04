@@ -14,6 +14,8 @@
 		AC7C5B1429B33C5500060919 /* Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B1329B33C5500060919 /* Rounded.swift */; };
 		AC7C5B1729B3486000060919 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B1629B3486000060919 /* UITextField.swift */; };
 		AC7C5B1A29B34A8000060919 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B1929B34A8000060919 /* LoginModel.swift */; };
+		AC7C5B1E29B3616800060919 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B1D29B3616800060919 /* LoginView.swift */; };
+		AC7C5B2029B361D600060919 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B1F29B361D600060919 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		AC7C5B1329B33C5500060919 /* Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounded.swift; sourceTree = "<group>"; };
 		AC7C5B1629B3486000060919 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		AC7C5B1929B34A8000060919 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AC7C5B1D29B3616800060919 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AC7C5B1F29B361D600060919 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		AC7C5B0329B3338A00060919 /* VoucherUp */ = {
 			isa = PBXGroup;
 			children = (
+				AC7C5B1C29B3615200060919 /* View */,
 				AC7C5B1829B34A7000060919 /* Model */,
 				AC7C5B1529B3483A00060919 /* Component */,
 				AC7C5B1229B33C3400060919 /* Shape */,
@@ -98,6 +103,15 @@
 				AC7C5B1929B34A8000060919 /* LoginModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC7C5B1C29B3615200060919 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC7C5B1D29B3616800060919 /* LoginView.swift */,
+				AC7C5B1F29B361D600060919 /* SignUpView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7C5B1E29B3616800060919 /* LoginView.swift in Sources */,
 				AC7C5B1A29B34A8000060919 /* LoginModel.swift in Sources */,
 				AC7C5B0729B3338A00060919 /* ContentView.swift in Sources */,
+				AC7C5B2029B361D600060919 /* SignUpView.swift in Sources */,
 				AC7C5B1429B33C5500060919 /* Rounded.swift in Sources */,
 				AC7C5B0529B3338A00060919 /* VoucherUpApp.swift in Sources */,
 				AC7C5B1729B3486000060919 /* UITextField.swift in Sources */,
