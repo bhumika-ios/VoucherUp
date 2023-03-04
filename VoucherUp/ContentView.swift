@@ -22,7 +22,7 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                 
             }
-            ZStack{
+            VStack{
                 VStack(alignment: .center, spacing: 1.0){
                     VStack(alignment: .center, spacing: 10){
                         Text("Welcome Back.").bold()
@@ -38,7 +38,10 @@ struct ContentView: View {
                             .frame(width: 250, height: 1)
                         // divider color set
                             .overlay(.black)
+                            
                     }
+                    .padding(.vertical,40)
+                   
                     VStack(alignment: .leading, spacing: 20){
                         UITextField(value: $email, placeholder: "email", icon: "envelope.fill")
                             .keyboardType(.emailAddress)
@@ -49,7 +52,7 @@ struct ContentView: View {
                     
                 }
             }
-            .padding(.top,400)
+            .padding(.top,30)
             .background(Color.white)
             .clipShape(Rounded())
             .padding(.top, -100)
