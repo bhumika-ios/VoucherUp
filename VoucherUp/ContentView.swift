@@ -28,11 +28,13 @@ struct ContentView: View {
                         
                         Text("Log in to get started.")
                             .foregroundColor(Color("Primary"))
-                            .multilineTextAlignment(.center)
+                           
                            // .padding(.leading)
                         Divider()
                             .padding(.leading)
+                        // divider with short to with and height set
                             .frame(width: 250, height: 1)
+                        // divider color set
                             .overlay(.black)
                     }
                    
