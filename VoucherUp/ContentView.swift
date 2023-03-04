@@ -40,7 +40,7 @@ struct ContentView: View {
                             .overlay(.black)
                             
                     }
-                    .padding(.vertical,40)
+                    .padding(.vertical)
                    
                     VStack(alignment: .leading, spacing: 20){
                         UITextField(value: $email, placeholder: "email", icon: "envelope.fill")
@@ -53,13 +53,13 @@ struct ContentView: View {
                             .padding()
                             .padding(.vertical,-30)
                     }
-                    .padding()
+                  //  .padding()
                     .padding(.vertical,25)
                     VStack(alignment: .leading, spacing: 20){
                         Button(action: {}, label: {
-                            Text("LogIn")
+                            Text("Log In").bold()
                                 .frame(width: 330, height: 45)
-                            
+                                .foregroundColor(.white)
                                 .background(
                                     Rectangle()
                                         .fill(Color("Primary"))
@@ -74,10 +74,24 @@ struct ContentView: View {
                         })
                     }
                     .padding()
-                    
+                    VStack(spacing: 20){
+                        HStack{
+                            Text("Not a member?")
+                                .foregroundColor(.blue)
+                            Button(action: {}, label: {
+                                Text("Sign up now")
+                            })
+                        }
+                    }
+                    .padding()
+                    VStack(spacing: 20){
+                        Button(action: {}, label: {
+                            Text("Forgot your password?")
+                        })
+                    }
                 }
             }
-            .padding(.top)
+            .padding()
             .background(Color.white)
             .clipShape(Rounded())
             .padding(.top, -100)
