@@ -10,12 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            GeometryReader { geometry in
+                Image("BI1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                   // .offset(y: geometry.frame(in: .global).midY/50)
+                   // .padding(.bottom)
+                    .edgesIgnoringSafeArea(.all)
+                
+            }
+            ScrollView(.vertical, showsIndicators: true){
+                VStack(alignment: .leading){
+                    
+                }
+            }
         }
-        .padding()
+       
     }
 }
 
