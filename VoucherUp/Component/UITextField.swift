@@ -21,12 +21,35 @@ struct UITextField: View {
             }else{
                 TextField(placeholder,text: $value).font(Font.system(size: 18, design: .monospaced))
             }
-                
+            
         }
+        
         .foregroundColor(.black)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
+        //.textFieldStyle(RoundedBorderTextFieldStyle())
         .multilineTextAlignment(.leading)
-        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
+      
+        .background(
+            Rectangle()
+                .fill(Color.white)
+                .cornerRadius(12)
+                .shadow(
+                    color: Color.gray.opacity(0.7),
+                    radius: 8,
+                    x: 0,
+                    y: 8
+                )
+            )
+        
+//      //  .background(Color(.white))
+//        RoundedRectangle(cornerRadius: 15)
+//            .frame(width: 250, height: 100)
+//            .foregroundColor(Color(UIColor.systemIndigo))
+//            .shadow(color: .pink, radius: 3, x: -2, y: 2)
+//
+////        RoundedRectangle(cornerRadius: 125)
+////
+////        .shadow(color: Color("LightShadow"), radius: 3, x: -2, y: 2)
+////        .shadow(color: Color("DarkShadow"), radius: 25, x: 8, y: 8)
     }
 }
 

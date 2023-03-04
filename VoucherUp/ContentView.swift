@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var email = "bhumi@test.com"
+    @State private var password = "Abc@123"
     var body: some View {
         VStack {
             GeometryReader { geometry in
@@ -36,6 +38,12 @@ struct ContentView: View {
                             .frame(width: 250, height: 1)
                         // divider color set
                             .overlay(.black)
+                    }
+                    VStack(alignment: .leading, spacing: 20){
+                        UITextField(value: $email, placeholder: "email", icon: "envelope.fill")
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                            .padding()
                     }
                    
                     
