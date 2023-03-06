@@ -62,8 +62,9 @@ struct SignUpView: View {
                             Text("Date-Of-Birth")
                                 .foregroundColor(.gray).opacity(0.5)
                                 .padding()
-                            Spacer()
+                           
                             DatePicker("", selection: $birthDate, displayedComponents: .date)
+                                .padding()
                         }
                         .frame(width: 330, height: 45)
                         .background(
