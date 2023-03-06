@@ -11,6 +11,7 @@ struct SignUpView: View {
     @State private var email = ""
     @State private var firstName = ""
     @State private var lastName = ""
+    @State private var isLogin: Bool = false
     @State private var number = ""
     @State private var birthDate = Date()
     @State private var password = ""
@@ -54,7 +55,7 @@ struct SignUpView: View {
                     VStack(alignment: .leading, spacing: 20){
                         HStack{
                             UITextField1(value: $firstName, placeholder: "First Name")
-                            UITextField1(value: $firstName, placeholder: "Last Name")
+                            UITextField1(value: $lastName, placeholder: "Last Name")
                         }
                         .padding()
                         .padding(.vertical,-26)
@@ -148,7 +149,9 @@ struct SignUpView: View {
                         HStack{
                             Text("Already a member?")
                               
-                            Button(action: {}, label: {
+                            Button(action: {
+                                isLogin = true
+                            }, label: {
                                 Text("Login here")
                             })
                         }
@@ -167,6 +170,9 @@ struct SignUpView: View {
             .background(Color("MainColor"))
             .clipShape(Rounded())
             .padding(.top, -100)
+        }
+        .fullScreenCover(isPresented: $isLogin){
+            LoginView()
         }
     }
 }
