@@ -12,6 +12,7 @@ struct SignUpView: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var isLogin: Bool = false
+    @State private var isOTP: Bool = false
     @State private var number = ""
     @State private var birthDate = Date()
     @State private var password = ""
@@ -127,7 +128,9 @@ struct SignUpView: View {
                   //  .padding()
                     .padding(.vertical,25)
                     VStack(alignment: .leading, spacing: 20){
-                        Button(action: {}, label: {
+                        Button(action: {
+                            isOTP = true
+                        }, label: {
                             Text("Proceed").bold()
                                 .frame(width: 330, height: 45)
                                 .foregroundColor(Color("MainColor"))
@@ -173,6 +176,10 @@ struct SignUpView: View {
         }
         .fullScreenCover(isPresented: $isLogin){
             LoginView()
+        }
+        .sheet(isPresented: $isOTP){
+            OTPView()
+                .presentationDetents([.height(700), .height(622)])
         }
     }
 }
