@@ -11,6 +11,8 @@ struct SignUpView: View {
     @State private var email = ""
     @State private var firstName = ""
     @State private var lastName = ""
+    @State private var number = ""
+    @State private var birthDate = Date()
     @State private var password = ""
     @State private var selectedGenderIndex: Int = 0
         
@@ -55,25 +57,13 @@ struct SignUpView: View {
                             UITextField1(value: $firstName, placeholder: "Last Name")
                         }
                         .padding()
-                        UITextField2(value: $email, placeholder: "Email")
-                            .keyboardType(.emailAddress)
-                            .autocapitalization(.none)
-                            .padding()
-                           
-                        UITextField2(value: $password, placeholder: "Password", isSecure: true)
-                            .autocapitalization(.none)
-                            .padding()
-                            .padding(.vertical,-30)
+                        .padding(.vertical,-26)
                         HStack{
-                            Text("Gender")
+                            Text("Date-Of-Birth")
+                                .foregroundColor(.gray).opacity(0.5)
                                 .padding()
                             Spacer()
-                            Picker(selection: $selectedGenderIndex, label: Text("Gender")) {
-                                ForEach(0..<genderOptions.count) {
-                                    Text(self.genderOptions[$0])
-                                }
-                            }
-                           
+                            DatePicker("", selection: $birthDate, displayedComponents: .date)
                         }
                         .frame(width: 330, height: 45)
                         .background(
@@ -88,13 +78,55 @@ struct SignUpView: View {
                                 )
                         )
                         .padding()
-                        .padding(.vertical,-1)
+                        .padding(.vertical,-12)
+                        HStack{
+                            Text("Gender")
+                                .foregroundColor(.gray).opacity(0.5)
+                                .padding()
+                            Spacer()
+                            Picker(selection: $selectedGenderIndex, label: Text("Gender")) {
+                                ForEach(0..<genderOptions.count) {
+                                    Text(self.genderOptions[$0])
+                                        .foregroundColor(.black)
+                                }
+                            }
+                            
+                            .accentColor(.black)
+                            .padding(.vertical,-10)
+                        }
+                        
+                        .frame(width: 330, height: 45)
+                        .background(
+                            Rectangle()
+                                .fill(Color.white)
+                                .cornerRadius(18)
+                                .shadow(
+                                    color: Color.gray.opacity(0.7),
+                                    radius: 8,
+                                    x: 0,
+                                    y: 8
+                                )
+                        )
+                        .padding()
+                        .padding(.vertical,-25)
+                        VStack{
+                            UITextField2(value: $email, placeholder: "Email")
+                                .keyboardType(.emailAddress)
+                                .autocapitalization(.none)
+                                .padding()
+                                .padding(.vertical,-10)
+                            
+                            UITextField2(value: $number, placeholder: "Mobile Number")
+                                .autocapitalization(.none)
+                                .padding()
+                                .padding(.vertical,-10)
+                        }
                     }
                   //  .padding()
                     .padding(.vertical,25)
                     VStack(alignment: .leading, spacing: 20){
                         Button(action: {}, label: {
-                            Text("Log In").bold()
+                            Text("Proceed").bold()
                                 .frame(width: 330, height: 45)
                                 .foregroundColor(Color("MainColor"))
                                 .background(
@@ -113,10 +145,10 @@ struct SignUpView: View {
                     .padding()
                     VStack(spacing: 20){
                         HStack{
-                            Text("Not a member?")
+                            Text("Already a member?")
                               
                             Button(action: {}, label: {
-                                Text("Sign up now")
+                                Text("Login here")
                             })
                         }
                         .foregroundColor(Color("LinkColor"))
