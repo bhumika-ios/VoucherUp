@@ -13,7 +13,6 @@ struct UIImage: View {
         VStack{
             Image(placeholder)
                 .resizable()
-                .resizable()
                 .clipShape(Rectangle())
                     .cornerRadius(20)
                     .shadow(
@@ -22,8 +21,7 @@ struct UIImage: View {
                         x: 0,
                         y: 8
                     )
-                    .frame(width: 180, height: 120)
-                    .foregroundColor(.black)
+                   
         }
     }
         
