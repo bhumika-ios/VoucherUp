@@ -131,7 +131,7 @@ struct HomeView: View {
                                 Button(action: {
                                   //  isOTPs = true
                                 }, label: {
-                                    Text("Submit").bold()
+                                    Text("Get Started").bold()
                                         .frame(width: 165, height: 45)
                                         .foregroundColor(Color("MainColor"))
                                         .background(
