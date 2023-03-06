@@ -27,11 +27,11 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 10){
                 VStack{
                     VStack(alignment: .leading, spacing: 10){
-                        Text("OTP Varification").bold()
+                        Text("Welcome Onboard").bold()
                             .font(.system(size: 26))
                             .foregroundColor(Color("Main2Color"))
                         
-                        Text("Almost there.Enter the 4-digit sent to [MobileNumber]")
+                        Text("A world of rewards is waiting for you!")
                             .font(.system(size: 12))
                             .foregroundColor(Color("Main2Color"))
                         
@@ -48,7 +48,30 @@ struct HomeView: View {
                     }
                     .padding(.vertical,30)
                     .padding(.horizontal,20)
+                    VStack{
+                        Text("Last, which merchants would you like to see more of?").bold()
+                            .font(.system(size: 26))
+                            .foregroundColor(Color("Main2Color"))
+                    }
+                    VStack{
+                        HStack{
+                            UIImage(placeholder: "BI1")
+                            UIImage(placeholder: "BI1")
+                          
+                                
+                               
+                              
+                                
+                        }
+                        HStack{
+                            UIImage(placeholder: "BI1")
+                            UIImage(placeholder: "BI1")
+                        }
+                        UIImage(placeholder: "BI1")
+                            
+                    }
                 }
+               
             }
             .padding()
             .background(Color("MainColor"))
