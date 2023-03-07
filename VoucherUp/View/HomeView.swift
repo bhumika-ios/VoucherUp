@@ -54,60 +54,11 @@ struct HomeView: View {
                             Text("Last, which merchants would you like to see more of?").bold()
                                 .font(.system(size: 22))
                                 .foregroundColor(Color("Main2Color"))
-                            HStack{
-                                Button(action: {}, label: {
-                                    Text("FASHION").bold()
-                                        .font(.title2)
-                                        .frame(width: 160, height: 100)
-                                        .foregroundColor(Color("MainColor"))
-                                        .background(
-                                            UIImage(placeholder: "BI1")
-                                                
-                                      )
-                                })
-                                Button(action: {}, label: {
-                                    Text("FOOD & BEVERAGE").bold()
-                                        .font(.title2)
-                                        .frame(width: 160, height: 100)
-                                        .foregroundColor(Color("MainColor"))
-                                        .background(
-                                            UIImage(placeholder: "BI1")
-                                                
-                                      )
-                                })
-                            }
-                            HStack{
-                                Button(action: {}, label: {
-                                    Text("FITNESS").bold()
-                                        .font(.title2)
-                                        .frame(width: 160, height: 100)
-                                        .foregroundColor(Color("MainColor"))
-                                        .background(
-                                            UIImage(placeholder: "BI1")
-                                                
-                                      )
-                                })
-                                Button(action: {}, label: {
-                                    Text("BEAUTY & WELLNESS").bold()
-                                        .font(.title2)
-                                        .frame(width: 160, height: 100)
-                                        .foregroundColor(Color("MainColor"))
-                                        .background(
-                                            UIImage(placeholder: "BI1")
-                                                
-                                      )
-                                })
-                            }
-                            Button(action: {}, label: {
-                                Text("ELECTRONICS").bold()
-                                    .font(.title2)
-                                    .frame(width: 160, height: 100)
-                                    .foregroundColor(Color("MainColor"))
-                                    .background(
-                                        UIImage(placeholder: "BI1")
-                                            
-                                  )
-                            })
+                            CategoryView()
+                            
+                            
+                          
+                          //  .padding()
                         }
                         .padding(.vertical)
                         VStack{

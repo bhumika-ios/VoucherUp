@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0A4BE629B6FE0A00283F12 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A4BE529B6FE0A00283F12 /* CategoryView.swift */; };
+		AC0A4BE829B71D0C00283F12 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A4BE729B71D0C00283F12 /* FirstView.swift */; };
+		AC0A4BEA29B71E1100283F12 /* HorizantallyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A4BE929B71E1100283F12 /* HorizantallyScrollView.swift */; };
 		AC7C5B0529B3338A00060919 /* VoucherUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B0429B3338A00060919 /* VoucherUpApp.swift */; };
 		AC7C5B0729B3338A00060919 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C5B0629B3338A00060919 /* ContentView.swift */; };
 		AC7C5B0929B3338B00060919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7C5B0829B3338B00060919 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0A4BE529B6FE0A00283F12 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		AC0A4BE729B71D0C00283F12 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		AC0A4BE929B71E1100283F12 /* HorizantallyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizantallyScrollView.swift; sourceTree = "<group>"; };
 		AC7C5B0129B3338A00060919 /* VoucherUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoucherUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7C5B0429B3338A00060919 /* VoucherUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherUpApp.swift; sourceTree = "<group>"; };
 		AC7C5B0629B3338A00060919 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 				ACE5B1B729B5E62F002E6455 /* OTPView.swift */,
 				ACE5B1B929B5F481002E6455 /* ResultOTPView.swift */,
 				ACE5B1BB29B5FA79002E6455 /* HomeView.swift */,
+				AC0A4BE529B6FE0A00283F12 /* CategoryView.swift */,
+				AC0A4BE729B71D0C00283F12 /* FirstView.swift */,
+				AC0A4BE929B71E1100283F12 /* HorizantallyScrollView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,12 +207,15 @@
 			files = (
 				AC7C5B1E29B3616800060919 /* LoginView.swift in Sources */,
 				ACE5B1BE29B5FDBC002E6455 /* UIImage.swift in Sources */,
+				AC0A4BE629B6FE0A00283F12 /* CategoryView.swift in Sources */,
 				AC7C5B1A29B34A8000060919 /* LoginModel.swift in Sources */,
 				AC7C5B0729B3338A00060919 /* ContentView.swift in Sources */,
 				ACE5B1BC29B5FA79002E6455 /* HomeView.swift in Sources */,
 				AC7C5B2029B361D600060919 /* SignUpView.swift in Sources */,
+				AC0A4BE829B71D0C00283F12 /* FirstView.swift in Sources */,
 				AC7C5B1429B33C5500060919 /* Rounded.swift in Sources */,
 				ACE5B1BA29B5F481002E6455 /* ResultOTPView.swift in Sources */,
+				AC0A4BEA29B71E1100283F12 /* HorizantallyScrollView.swift in Sources */,
 				AC7C5B0529B3338A00060919 /* VoucherUpApp.swift in Sources */,
 				ACE5B1B829B5E62F002E6455 /* OTPView.swift in Sources */,
 				AC7C5B1729B3486000060919 /* UITextField.swift in Sources */,
