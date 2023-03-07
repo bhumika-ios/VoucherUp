@@ -9,8 +9,9 @@ import SwiftUI
 
 struct CategoryView: View {
     var body: some View {
-        VStack{
-           
+        ScrollView(.vertical,showsIndicators: false){
+            VStack(alignment: .leading){
+                
                 HStack{
                     Button(action: {}, label: {
                         Text("FASHION").bold()
@@ -68,7 +69,8 @@ struct CategoryView: View {
                             
                         )
                 })
-            
+                
+            }
         }
        // .padding(.vertical,50)
     }

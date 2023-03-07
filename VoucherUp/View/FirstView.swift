@@ -10,23 +10,47 @@ import SwiftUI
 struct FirstView: View {
     var body: some View {
         ZStack{
-            VStack{
-                Text("Hi Alex")
-                Text("your points balance is")
-                Text("105,000")
-                    .font(.title).bold()
-                    .foregroundColor(Color("Primary"))
-                Text("valid till 12 December, 2022")
-                   
+           
                 VStack{
-                    Text("Featured Merchants")
-                        .font(.title2).bold()
-                        .foregroundColor(Color("Primary"))
-                    HorizantallyScrollView()
-                    
+                    VStack{
+                        Text("Hi Alex")
+                        Text("your points balance is")
+                        Text("105,000")
+                            .font(.title).bold()
+                            .foregroundColor(Color("Primary"))
+                        Text("valid till 12 December, 2022")
+                    }
+                    ScrollView{
+                        VStack(alignment: .leading){
+                            Text("Featured Merchants")
+                                .font(.title2).bold()
+                                .foregroundColor(Color("Primary"))
+                            HorizantallyScrollView()
+                            
+                        }
+                        .padding()
+                        .padding(.vertical, 35)
+                        VStack(alignment: .leading){
+                            Text("Merchants near you")
+                                .font(.title2).bold()
+                                .foregroundColor(Color("Primary"))
+                            HorizantallyScrollView()
+                            
+                        }
+                        .padding()
+                        .padding(.vertical,-40)
+                        VStack(alignment: .leading){
+                            Text("Categories")
+                                .font(.title2).bold()
+                                .foregroundColor(Color("Primary"))
+                                .padding(.horizontal,-11)
+                            CategoryView()
+                            
+                        }
+                       
+                        .padding(.vertical,35)
+                    }
                 }
-                .padding(.vertical, 35)
-            }
             
         }
     }
