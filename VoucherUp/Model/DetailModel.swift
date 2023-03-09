@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailModel: Identifiable{
+struct DetailModel: Identifiable, Hashable{
     var id = UUID()
     
     let imageName: String

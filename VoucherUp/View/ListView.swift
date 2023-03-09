@@ -10,19 +10,26 @@ import SwiftUI
 struct ListView: View {
     var body: some View {
         NavigationView{
-           
-            List(detailModel){ detailm in
-                NavigationLink(destination: DetailView(detailModel: detailm)){
-                    ShowListView(detailModel: detailm)
+            VStack(alignment: .leading){
+                MainTextListView()
+                ScrollView(.vertical, showsIndicators: false){
+                    ForEach(detailModel, id: \.self){ detailm in
+                        
+                        NavigationLink(destination: DetailView(detailModel: detailm)){
+                            ShowListView(detailModel: detailm)
+                        }
+                    }
+                    .padding()
+                    
+                    .background(Color("MainColor"))
+                    
                 }
+                
             }
-            // .listStyle(.grouped)
-            .padding(.horizontal,-15)
-           
+            .padding()
+            //.background(Color("MainColor"))
+            
         }
-      
-        //.padding()
-        .background(Color("MainColor"))
     }
 }
 
@@ -55,9 +62,42 @@ struct ShowListView: View{
                     }
                     Text(detailModel.type)
                 }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .resizable()
+                    .frame(width: 10, height: 20)
+                    .foregroundColor(Color("Primary"))
             }
+            Divider()
+            // divider with short to with and height set
+                .frame(height: 1)
+            // divider color set
+                .overlay(Color("Main2Color"))
+            
         }
         //.padding()
+        .background(Color("MainColor"))
+    }
+}
+
+struct MainTextListView: View {
+    var body: some View {
+        VStack(alignment: .leading){
+            Text("Food & Beverage").bold()
+                .font(.system(size: 22))
+                .foregroundColor(Color("Primary"))
+            Text("Delicious delights with deals to match.")
+                .font(.system(size: 12))
+                
+            VStack(alignment: .leading){
+                Text("Sort by: Cashback(10%)>")
+                    .font(.system(size: 12))
+                    .padding(.vertical)
+              
+            }
+           // .padding()
+        }
+      //  .padding()
         .background(Color("MainColor"))
     }
 }
