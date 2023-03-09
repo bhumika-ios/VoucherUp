@@ -26,6 +26,7 @@
 		AC7DB2EB29B9EEB80005B57D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7DB2EA29B9EEB80005B57D /* CardView.swift */; };
 		AC7DB2ED29B9F20A0005B57D /* OverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7DB2EC29B9F20A0005B57D /* OverView.swift */; };
 		AC7DB2EF29B9F4350005B57D /* VoucherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7DB2EE29B9F4350005B57D /* VoucherDetail.swift */; };
+		AC7DB2F129B9F8FB0005B57D /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7DB2F029B9F8FB0005B57D /* ReviewView.swift */; };
 		ACE5B1B829B5E62F002E6455 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B1B729B5E62F002E6455 /* OTPView.swift */; };
 		ACE5B1BA29B5F481002E6455 /* ResultOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B1B929B5F481002E6455 /* ResultOTPView.swift */; };
 		ACE5B1BC29B5FA79002E6455 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5B1BB29B5FA79002E6455 /* HomeView.swift */; };
@@ -53,6 +54,7 @@
 		AC7DB2EA29B9EEB80005B57D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC7DB2EC29B9F20A0005B57D /* OverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverView.swift; sourceTree = "<group>"; };
 		AC7DB2EE29B9F4350005B57D /* VoucherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherDetail.swift; sourceTree = "<group>"; };
+		AC7DB2F029B9F8FB0005B57D /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		ACE5B1B729B5E62F002E6455 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		ACE5B1B929B5F481002E6455 /* ResultOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOTPView.swift; sourceTree = "<group>"; };
 		ACE5B1BB29B5FA79002E6455 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				AC7DB2EA29B9EEB80005B57D /* CardView.swift */,
 				AC7DB2EC29B9F20A0005B57D /* OverView.swift */,
 				AC7DB2EE29B9F4350005B57D /* VoucherDetail.swift */,
+				AC7DB2F029B9F8FB0005B57D /* ReviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				AC7DB2E329B9A1A30005B57D /* ListView.swift in Sources */,
 				AC0A4BE629B6FE0A00283F12 /* CategoryView.swift in Sources */,
 				AC7C5B1A29B34A8000060919 /* LoginModel.swift in Sources */,
+				AC7DB2F129B9F8FB0005B57D /* ReviewView.swift in Sources */,
 				AC7DB2EB29B9EEB80005B57D /* CardView.swift in Sources */,
 				AC7C5B0729B3338A00060919 /* ContentView.swift in Sources */,
 				ACE5B1BC29B5FA79002E6455 /* HomeView.swift in Sources */,
