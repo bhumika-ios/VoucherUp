@@ -19,8 +19,8 @@ struct DetailModel: Identifiable{
 }
 let detailModel = [
                     DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
-                    DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
-                    DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
+                    DetailModel(imageName: "BI1", name: "PIZZA", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
+                    DetailModel(imageName: "BI1", name: "PIZZA Eat", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
                     DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
                     DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
                     DetailModel(imageName: "BI1", name: "PIZZA HUT", address: "4 Tample central,surat" , type: "FamilyRestaurant", phoneNumber: "6684565"),
