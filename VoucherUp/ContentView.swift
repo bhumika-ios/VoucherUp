@@ -27,17 +27,23 @@ struct ContentView: View {
 
                     .toolbarBackground(Color.yellow, for: .tabBar)
 
-                Text("Notification")
+                Text("Payment")
                     .tabItem {
-                        Label("Notification", systemImage: "bell")
+                        Label("Payment", systemImage: "square.topthird.inset.filled")
                     }
                     .toolbar(.visible, for: .tabBar)
 
                     .toolbarBackground(Color.yellow, for: .tabBar)
+            Text("My VoucherUp")
+                .tabItem {
+                    Label("My VoucherUp", systemImage: "heart.square.fill")
+                }
+                .toolbar(.visible, for: .tabBar)
 
-                Text("Settings")
+                .toolbarBackground(Color.yellow, for: .tabBar)
+                Text("Me")
                     .tabItem {
-                        Label("Settings", systemImage: "gearshape")
+                        Label("Me", systemImage: "photo.circle.fill")
                     }
                     .toolbar(.visible, for: .tabBar)
 
