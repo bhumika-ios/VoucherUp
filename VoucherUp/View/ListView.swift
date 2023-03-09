@@ -43,7 +43,7 @@ struct ShowListView: View{
     let detailModel: DetailModel
     var body: some View{
         VStack{
-           
+
             HStack{
                 Image(detailModel.imageName)
                     .resizable()
@@ -83,6 +83,12 @@ struct ShowListView: View{
 struct MainTextListView: View {
     var body: some View {
         VStack(alignment: .leading){
+            Button(action: {}, label: {
+                Image(systemName: "chevron.backward")
+                    .resizable()
+                    .frame(width: 10, height: 20)
+                    .foregroundColor(Color("Primary"))
+            })
             Text("Food & Beverage").bold()
                 .font(.system(size: 22))
                 .foregroundColor(Color("Primary"))
