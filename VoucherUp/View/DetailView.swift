@@ -11,6 +11,14 @@ struct DetailView: View {
     let detailModel : DetailModel
     var body: some View {
         VStack{
+          
+            Button(action: {}, label: {
+                Image(systemName: "square.and.arrow.up")
+                    .foregroundColor(Color("Primary"))
+                    .offset(x:150, y:-20)
+            })
+           
+
             HStack{
                 Image(detailModel.imageName)
                     .resizable()
@@ -72,30 +80,9 @@ struct DetailView: View {
                             )
                 })
             }
-            VStack(alignment: .leading){
-                Text("About").bold()
-                Text(detailModel.about)
+            ScrollView{
+                OverView(detailModel: detailModel)
             }
-            .padding()
-            VStack(alignment: .leading){
-                Text("Opening Hours").bold()
-                HStack{
-                    Text("Monday")
-                    Spacer()
-                    Text("11:00 - 22:00")
-                }
-                HStack{
-                    Text("Tuesday")
-                    Spacer()
-                    Text("11:00 - 22:00")
-                }
-                HStack{
-                    Text("Wednesday")
-                    Spacer()
-                    Text("11:00 - 22:00")
-                }
-            }
-            .padding()
            
         }
         .padding()

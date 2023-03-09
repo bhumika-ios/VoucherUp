@@ -10,10 +10,19 @@ import SwiftUI
 struct OverView: View {
     let detailModel: DetailModel
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             VStack(alignment: .leading){
                 Text("About").bold()
                 Text(detailModel.about)
+            }
+            .padding()
+            VStack(alignment: .leading){
+                Text("Photos From Merchant").bold()
+                Image("BI1")
+                    .resizable()
+                    .frame(width: 350, height: 180)
+                    .clipped()
+                    .cornerRadius(15)
             }
             .padding()
             VStack(alignment: .leading){
@@ -36,6 +45,7 @@ struct OverView: View {
             }
             .padding()
         }
+        .padding()
     }
 }
 
